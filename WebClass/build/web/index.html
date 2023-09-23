@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Converter</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Number Converter</h1>
+    </header>
+    <main>
+        <form action="ConvertServ" method="get">
+            <label for="number">Enter a Base 10 number:</label>
+            <input type="text" id="number" name="number" required>
+            
+            <fieldset>
+                <legend>Select base:</legend>
+                <label for="binary">
+                    <input type="radio" id="binary" name="operation" value="binary"> Binary
+                </label>
+                <label for="hexa">
+                    <input type="radio" id="hexa" name="operation" value="hexa"> Hexa
+                </label>
+                <label for="octal">
+                    <input type="radio" id="octal" name="operation" value="octal"> Octal
+                </label>
+            </fieldset>
+           
+            <button type="submit">Convert</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+   
+</body>
+</html>
+
